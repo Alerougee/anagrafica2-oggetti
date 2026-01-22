@@ -1,6 +1,9 @@
 const persona = [];
 
 function stampa() {
+
+persona.length = 0;
+
     const oggetto = {
         nome: document.getElementById("input-nome").value,
         cognome: document.getElementById("input-cognome").value,
@@ -23,7 +26,8 @@ function stampa() {
     if (document.getElementById("dati").innerHTML !== "") {
         document.getElementById("dati").innerHTML += "<hr><br>";
     }
-    
+
+
     for(var i = 0; i < persona.length; i++){
         document.getElementById("dati").innerHTML +=
             "Nome: " + oggetto.nome + "<br>" +
